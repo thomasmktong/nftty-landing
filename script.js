@@ -63,8 +63,9 @@ if (jQuery('#myShader').length > 0) {
 
   function resize(force) {
     var canvas = renderer.domElement;
-    var width = window.innerWidth * window.devicePixelRatio;
-    var height = window.innerHeight * window.devicePixelRatio;
+    var dpr = 1 / window.devicePixelRatio;
+    var width = window.innerWidth * dpr;
+    var height = window.innerHeight * dpr;
     if (force || width != canvas.width || height != canvas.height) {
       console.log('width: ' + width + ', canvas.width: ' + canvas.width);
       console.log('height: ' + height + ', canvas.height: ' + canvas.height);
