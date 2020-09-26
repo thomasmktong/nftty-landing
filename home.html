@@ -48,7 +48,7 @@
 <body>
     <div id="subscribeBox">
         <h1>NFTTY</h1>
-        <p>The first NFT staking and merchandising ecosystem, powered by Ethereum blockchain.</p>
+        <p>The first crypto artwork staking and merchandising ecosystem, powered by Ethereum blockchain.</p>
         <p>Sign up for news and airdrops:</p>
         <div id="mailchimp">
             <!-- Begin Mailchimp Signup Form -->
@@ -372,7 +372,8 @@
       //Camera stuff
       vec3 angles = vec3(0);
 
-      angles = vec3((vec2(1350.0, 400.0) / iResolution.xy) * pi, 0);
+      //angles = vec3((vec2(1350.0, 400.0) / iResolution.xy) * pi, 0);
+      angles = vec3(1.5, 20.0, 0);
       angles.xy *= vec2(1.0, 1.0);
 
       angles.y = clamp(angles.y, 0.0, 15.5 * tau / 64.0);
